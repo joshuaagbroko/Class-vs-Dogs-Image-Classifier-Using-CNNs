@@ -1,4 +1,4 @@
-* Cats vs Dogs Classifier
+*** Cats vs Dogs Classifier
 
 This project is an image classification model that distinguishes between images of cats and dogs. Using a pre-trained convolutional base (VGG16) trained on ImageNet, the project demonstrates two approaches to building a classifier for the Cats and Dogs Dataset from Kaggle.
 
@@ -13,13 +13,14 @@ Training set: 1,000 samples per class (2,000 total images).
 Validation set: 500 samples per class (1,000 total images).
 Test set: 1,000 samples per class (2,000 total images).
 
-**Approach
+** Approach
 This project leverages transfer learning with the VGG16 convolutional base to extract rich, high-level features from the images. Two approaches were explored:
 
 1. Feature Extraction with a Standalone Classifier
 The pre-trained VGG16 convolutional base was used to extract features from the dataset.
 These features were saved as NumPy arrays to disk.
 A standalone, densely connected classifier was trained on these precomputed features.
+
 Advantages:
 Fast and computationally inexpensive, as the convolutional base processes each image only once.
 Limitation:
@@ -33,7 +34,7 @@ Fully utilizes the power of data augmentation.
 Limitation:
 Computationally expensive, as the convolutional base processes every image during every epoch.
 
-**Model Architecture
+** Model Architecture
 Pre-trained Convolutional Base (VGG16)
 Trained on ImageNet.
 Extracts meaningful features from input images.
