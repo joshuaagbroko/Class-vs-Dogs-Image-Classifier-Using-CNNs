@@ -1,7 +1,8 @@
-*Cats vs Dogs Classifier
+* Cats vs Dogs Classifier
+
 This project is an image classification model that distinguishes between images of cats and dogs. Using a pre-trained convolutional base (VGG16) trained on ImageNet, the project demonstrates two approaches to building a classifier for the Cats and Dogs Dataset from Kaggle.
 
-**Dataset
+** Dataset
 The dataset used for this project is the Cats and Dogs Dataset from Kaggle. It contains:
 
 25,000 images (12,500 images of cats and 12,500 images of dogs).
